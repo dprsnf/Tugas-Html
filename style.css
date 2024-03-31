@@ -291,6 +291,7 @@ input:checked+label .description {
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    width: 100%;
 }
 
 .row img {
