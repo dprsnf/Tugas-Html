@@ -1,4 +1,3 @@
-/* Reset CSS */
 *,
 html {
     margin: 0;
@@ -15,7 +14,8 @@ body {
     background: #2a2a2a;
     color: white;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,30 +28,36 @@ header{
     padding: 22px 15%;
     transition: all .45s ease;
 }
-.logo{
+
+.logo {
     color: #ffff;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
 }
-.logo span{
+
+.logo span {
     color: red;
 }
-.navlist{
+
+.navlist {
     display: flex;
 }
-.navlist a{
+
+.navlist a {
     color: white;
     font-size: 17px;
     font-weight: 500;
     margin: 0 25px;
     transition: all .45s ease;
 }
-.navlist a:hover{
+
+.navlist a:hover {
     color: red;
     border-bottom: 2px solid red;
 }
-section{
+
+section {
     padding: 160px 10% 120px;
 }
 
@@ -68,10 +74,11 @@ section{
     display: flex;
 }
 
-.slide{
+.slide {
     margin-bottom: 20px;
 }
-.one{
+
+.one {
     display: inline-block;
     margin-right: 15px;
     height: 32px;
@@ -83,19 +90,22 @@ section{
     background: red;
     color: #ffff;
 }
-.two{
+
+.two {
     display: inline-block;
     color: #202020;
     font-size: 20px;
     font-weight: 500;
 }
-.home-text h1{
+
+.home-text h1 {
     font-weight: 700;
     font-size: 60px;
     color: #ffff;
     list-style: 1.1;
     margin: 0 0 8px;
 }
+
 .home-text h3 {
     color: #ffff;
     margin: 0 0 35px;
@@ -103,10 +113,12 @@ section{
     font-weight: 700;
     line-height: 1.1;
 }
-.home-text h3 span{
+
+.home-text h3 span {
     color: red;
 }
-.home-text p{
+
+.home-text p {
     color: #ffff;
     font-size: medium;
     line-height: 1.2;
@@ -119,7 +131,7 @@ section{
     gap: 2rem;
 }
 
-.icons i{
+.icons i {
     color: #ffff;
     background-color: red;
     width: 45px;
@@ -137,7 +149,7 @@ section{
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.icons i:hover  {
+.icons i:hover {
     transform: scale(0.8);
     box-shadow: 0 0 20px white;
     color: red;
@@ -257,14 +269,14 @@ input:checked+label .description {
     background-image: url('Asset/foto4.jpg');
 }
 
-.main-text{
+.main-text {
     font-size: 30px;
     color: white;
     text-align: center;
     padding-top: 5%;
 }
 
-.blog-content{
+.blog-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
@@ -273,23 +285,26 @@ input:checked+label .description {
     margin-left: 10rem;
     margin-right: 10rem;
 }
-.row{
+
+.row {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
 }
-.row img{
+
+.row img {
     width: 500px;
     height: 400px;
     border-radius: 8px;
     display: flex;
     transition: transform 0.5s;
 }
-.layer{
+
+.layer {
     width: 500px;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #202020);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #202020);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -303,18 +318,21 @@ input:checked+label .description {
     padding: 0 40px;
     transition: height 0.5s;
 }
-.layer h5{
+
+.layer h5 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.layer p{
+
+.layer p {
     color: white;
     font-size: 1rem;
     line-height: 1.8;
     text-align: justify;
 }
-.layer i{
+
+.layer i {
     color: #ffff;
     margin-top: 20px;
     font-size: 20px;
@@ -326,19 +344,23 @@ input:checked+label .description {
     justify-content: center;
     border-radius: 50%;
 }
-.layer i:hover{
+
+.layer i:hover {
     color: red;
     background-color: white;
     font-size: 25px;
     transition: font-size 0.5s ease;
 }
-.row:hover img{
+
+.row:hover img {
     transform: scale(1.2);
 }
-.row:hover .layer{
+
+.row:hover .layer {
     height: 100%;
 }
-.contact-me{
+
+.contact-me {
     width: 100%;
     padding: 100px;
     background-color: #101010;
@@ -347,71 +369,90 @@ input:checked+label .description {
     justify-content: center;
     flex-direction: column;
 }
-.contact-text h2{
+
+.contact-text h2 {
     color: white;
     font-size: 65px;
     text-transform: capitalize;
     margin-bottom: 20px;
     text-align: center;
 }
-.contact-me span{
+
+.contact-me span {
     color: red;
 }
-.contact-box{
+
+.contact-box {
     color: white;
 }
-.contact-box::after{
+
+.contact-box::after {
     content: '';
     display: block;
     clear: both;
 }
-.contact{
+
+.contact {
     width: 30%;
     padding: 50px;
     box-sizing: border-box;
     text-align: center;
     float: left;
 }
-.contact h4{
+
+.contact h4 {
     color: red;
     padding-bottom: 10px;
 }
-.contact p{
+
+.contact p {
     font-size: 18px;
     color: white;
 }
-.footer-container{
+
+footer {
+    background-color: #101010;
+    padding-top: 50px;
+}
+
+.footer-container {
     display: flex;
     justify-content: center;
     margin: auto;
     width: 100%;
     background-color: black;
 }
-.footer-content{
+
+.footer-content {
     width: 100%;
     padding-top: 40px;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-size: 28px;
     margin-bottom: 15px;
     margin-left: 30px;
     text-align: left;
     color: white;
 }
-.footer-content span{
+
+.footer-content span {
     color: red;
 }
-.footer-content p{
+
+.footer-content p {
     width: 190px;
     padding-bottom: 7px;
     text-align: left;
     margin-left: 30px;
     color: white;
 }
-.footer-content ul{
+
+.footer-content ul {
     text-align: center;
 }
-.list li{
+
+.list li {
     width: auto;
     text-align: left;
     list-style-type: none;
@@ -419,10 +460,11 @@ input:checked+label .description {
     margin-left: 30px;
     position: relative;
 }
-.list li::before{
+
+.list li::before {
     content: '';
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 100%;
     width: 0;
@@ -430,18 +472,22 @@ input:checked+label .description {
     background: white;
     transition-duration: .5s;
 }
-.list list-style:hover::before{
+
+.list list-style:hover::before {
     width: 70px;
 }
-.list a{
+
+.list a {
     color: #ffff;
 }
-.list a:hover{
+
+.list a:hover {
     color: red;
     border-bottom: 1px solid red;
 }
-.social-icons{
-flex-direction: row;
+
+.social-icons {
+    flex-direction: row;
     justify-content: flex-start;
     padding: 0;
     color: white;
@@ -449,24 +495,29 @@ flex-direction: row;
     display: flex;
     margin-left: 30px;
 }
-.social-icons li{
+
+.social-icons li {
     padding-left: 7px;
 }
-.social-icons li a{
+
+.social-icons li a {
     color: white;
     text-decoration: none;
 }
-.social-icons i:hover{
+
+.social-icons i:hover {
     color: red;
     transform: scale(0.8);
     transition: transform 1s ease;
 }
-.end{
+
+.end {
     background-color: black;
     text-align: center;
     padding: 10px 0;
 }
-.end p{
+
+.end p {
     color: white;
     margin: 0;
     font-size: 16px;
