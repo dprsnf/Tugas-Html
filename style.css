@@ -380,3 +380,95 @@ input:checked+label .description {
     font-size: 18px;
     color: white;
 }
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+}
+.footer-content{
+    width: 100%;
+    padding-top: 40px;
+}
+.footer-content h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    text-align: left;
+    color: white;
+}
+.footer-content span{
+    color: red;
+}
+.footer-content p{
+    width: 190px;
+    padding-bottom: 7px;
+    text-align: left;
+    margin-left: 30px;
+    color: white;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list li{
+    width: auto;
+    text-align: left;
+    list-style-type: none;
+    padding-bottom: 7px;
+    margin-left: 30px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition-duration: .5s;
+}
+.list list-style:hover::before{
+    width: 70px;
+}
+.list a{
+    color: #ffff;
+}
+.list a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.social-icons{
+flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    margin-left: 30px;
+}
+.social-icons li{
+    padding-left: 7px;
+}
+.social-icons li a{
+    color: white;
+    text-decoration: none;
+}
+.social-icons i:hover{
+    color: red;
+    transform: scale(0.8);
+    transition: transform 1s ease;
+}
+.end{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.end p{
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
