@@ -1,16 +1,32 @@
 /* Reset CSS */
-* {
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* Body */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: black; /* Warna putih */
-    color: #333;
+    background: #2a2a2a;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    transition: all .45s ease;
 }
 
 .home-container{
