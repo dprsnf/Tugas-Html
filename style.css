@@ -1,0 +1,89 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black; /* Warna putih */
+    color: #333;
+}
+
+.home-container{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #891652;
+}
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+background: #fff;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Aside */
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside div {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
