@@ -54,3 +54,100 @@ header{
 section{
     padding: 160px 10% 120px;
 }
+
+.home-container {
+    position: relative;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('Asset/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: red;
+    color: #ffff;
+}
+.two{
+    display: inline-block;
+    color: #202020;
+    font-size: 20px;
+    font-weight: 500;
+}
+.home-text h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: #ffff;
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3 {
+    color: #ffff;
+    margin: 0 0 35px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text h3 span{
+    color: red;
+}
+.home-text p{
+    color: #ffff;
+    font-size: medium;
+    line-height: 1.2;
+    padding-right: 600px;
+    text-align: justify;
+}
+
+.icons {
+    padding-top: 15px;
+    gap: 2rem;
+}
+
+.icons i{
+    color: #ffff;
+    background-color: red;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    border-radius: 8px;
+    display: inline-flex;
+    font-size: 22px;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.icons a i {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.icons i:hover  {
+    transform: scale(0.8);
+    box-shadow: 0 0 20px white;
+    color: red;
+    background-color: #ffff;
+}
+
+.icons a:active i {
+    transform: scale(2);
+}
+
+.icons a:not(:hover) i {
+    transition: none;
+}
