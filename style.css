@@ -36,10 +36,6 @@ header {
     letter-spacing: 1px;
 }
 
-.logo span {
-    color: red;
-}
-
 .navlist {
     display: flex;
 }
@@ -62,7 +58,7 @@ section {
 }
 
 .home-container {
-    position: relative;
+    position: relative; 
     flex-flow: column;
     height: 100vh;
     width: 100%;
@@ -114,7 +110,7 @@ section {
     line-height: 1.1;
 }
 
-.home-text h3 span {
+span {
     color: red;
 }
 
@@ -380,10 +376,6 @@ input:checked+label .description {
     text-align: center;
 }
 
-.contact-me span {
-    color: red;
-}
-
 .contact-box {
     color: white;
 }
@@ -397,7 +389,7 @@ input:checked+label .description {
 .contact {
     width: 30%;
     padding: 50px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-align: center;
     float: left;
 }
@@ -436,10 +428,6 @@ footer {
     margin-left: 30px;
     text-align: left;
     color: white;
-}
-
-.footer-content span {
-    color: red;
 }
 
 .footer-content p {
