@@ -1,3 +1,7 @@
+<?php
+include 'config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,53 +81,32 @@
             <h2><span>B</span>log</h2>
         </div>
         <div class="blog-content">
-            <div class="row">
-                <img src="Asset/blog1.jpg">
-                <div class="layer">
-                    <h5>Bunaken, Manado</h5>
-                    <p>Taman Nasional Bunaken merupakan taman nasional yang berada di laut yang letaknya berada di
-                        Sulawesi Utara, Indonesia. Taman ini telah ditetapkan oleh pemerintah Indonesia sebagai taman
-                        laut sejak 27 tahun yang lalu.</p>
-                    <a
-                        href="https://www.goodnewsfromindonesia.id/2019/06/26/keindahan-taman-bawah-laut-bunaken-indonesia"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="Asset/blog2.jpg">
-                <div class="layer">
-                    <h5>Banda Neira, Maluku</h5>
-                    <p>Samudra Banda Neira, sebuah surga tersembunyi di Indonesia, menawarkan keindahan yang menakjubkan
-                        yang mencengangkan mata dan merayu hati setiap pengunjungnya. Terletak di Kepulauan Banda,
-                        provinsi Maluku, samudra ini memikat dengan pesona alam bawah lautnya yang luar biasa.</p>
-                    <a
-                        href="https://yachtsourcing.com/id/blog-id/kejaiban-samudra-banda-neira-pesona-alam-bawah-laut-yang-memukau/"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
-            <div class="row">
-                <img src="Asset/blog3.jpg">
-                <div class="layer">
-                    <h5>Bromo, Jawa Timur</h5>
-                    <p> Gunung Bromo terletak di kawasan Probolinggo, Jawa Timur, Indonesia. Kawasan ini terkenal dengan
-                        keindahan alamnya yang luar biasa. Kamu dapat mencapai sana dengan perjalanan darat dari
-                        Surabaya atau Malang.</p>
-                    <a href="https://mediascanter.id/wisata-bromo-eksplorasi-keindahan-gunung-bromo-di-indonesia/"><i
-                            class="bx bx-link-external"></i></a>
-                </div>
-            </div>
+            <?php
+            $query = "SELECT * FROM blog";
+            $result = mysqli_query($conn, $query);
 
+            $no = 1;
+
+            if ($result) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    if ($no >=0) {
+            ?>
             <div class="row">
-                <img src="Asset/blog4.jpg">
+                <img src="Asset/<?= $row["foto"] ?>">
                 <div class="layer">
-                    <h5>Raja Ampat, Papua</h5>
-                    <p>Raja Ampat di Provinsi Papua Barat adalah salah satu tempat wisata yang makin diminati oleh turis
-                        domestik. Letaknya yang cukup jauh ini terkadang jadi masalah, tapi kalau kamu lihat
-                        pemandangannya sih tidak akan sia-sia!</p>
-                    <a href="https://www.nusatrip.com/blog/keindahan-raja-ampat-indonesia/"><i
+                    <h5><?= $row["alamat"] ?></h5>
+                    <p><?= $row["artikel"] ?></p>
+                    <a
+                        href=<?= $row["href"] ?>><i
                             class="bx bx-link-external"></i></a>
                 </div>
             </div>
+            <?php } 
+            $no++;
+            }
+            } else {
+            echo "Error: " . $query . "<br>" . mysqli_error($conn);
+            } ?>
         </div>
         </div>
     </section>
